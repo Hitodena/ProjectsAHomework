@@ -1,5 +1,5 @@
 class Square:
-    ct = 0
+    __ct = 0
 
     @staticmethod
     def sq_square(a):
@@ -24,11 +24,11 @@ class Square:
     
     @staticmethod
     def __count():
-        Square.ct += 1
+        Square.__ct += 1
     
     @staticmethod
     def count():
-        return Square.ct
+        return Square.__ct
     
 
 sq = Square
@@ -37,3 +37,4 @@ print(f"Площадь треугольника через основание и
 print(f"Площадь квадрата: {sq.sq_square(7)}")
 print(f"Площадь прямоугольника: {sq.sq_rect(2, 6)}")
 print(f"Количество подсчётов площади: {sq.count()}")
+
